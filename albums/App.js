@@ -7,8 +7,9 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, Text, View} from 'react-native';
 import Header from './src/components/header'
+import AlbumList from './src/components/AlbumList'
 
 
 const instructions = Platform.select({
@@ -26,27 +27,29 @@ export default class App extends Component<Props> {
         // <Text style={styles.welcome}>Hello World</Text>
         // <Text style={styles.instructions}>To get started, edit App.js</Text>
         // <Text style={styles.instructions}>{instructions}</Text>
-        <Header />
-//      </View>
+        <View>
+        <Header headerText={'Albums'} />
+        <AlbumList />
+        </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+//
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#F5FCFF',
+//   },
+//   welcome: {
+//     fontSize: 20,
+//     textAlign: 'center',
+//     margin: 10,
+//   },
+//   instructions: {
+//     textAlign: 'center',
+//     color: '#333333',
+//     marginBottom: 5,
+//   },
+// });
