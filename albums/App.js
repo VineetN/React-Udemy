@@ -27,7 +27,7 @@ export default class App extends Component<Props> {
         // <Text style={styles.welcome}>Hello World</Text>
         // <Text style={styles.instructions}>To get started, edit App.js</Text>
         // <Text style={styles.instructions}>{instructions}</Text>
-        <View>
+        <View style={{ flex: 1 }}>
         <Header headerText={'Albums'} />
         <AlbumList />
         </View>
